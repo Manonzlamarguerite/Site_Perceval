@@ -1,21 +1,31 @@
+const onglets = document.querySelectorAll('.onglets');
+const contenu = document.querySelectorAll('.contenu')
+let index = 0;
 
+onglets.forEach(onglet => {
+  onglet.addEventListener('click', () => {
 
-function nouvelOnglet() {
-  var li = this.parentNode;
-  var div = this.parentNode.parentNode.parentNode;
-  var id = this.getAttribute('href');
+    if(onglet.classList.contains('active')){
+      return;
+    } else {
+      onglet.classList.add('active');
+    }
 
-  if (li.classList.contains('active')){
-    return false;
-  }
+    index = onglet.getAttribute('data-anim');
+    console.log(index);
 
-  //On supprime la class active de l'onglet actif
-  div.querySelector('.contenue .active').classList.remove('active');
+    for(i = 0; i < onglets.length; i++) {
+      if(onglets[i].getAttribute('data-anim') != index) {
+          onglets[i].classList.remove('active');
+      }
+    }
 
-  //On ajoute la class active à notre onglet
-  li.classList.add('active');
-
-  div.querySelector('.contenueonglets ').classList.remove('active');
-
-  div.querySelector(id).classList.add('active');
-}
+    for(j = 0; j < contenu.length; j++){
+      if(contenu[j].getAttribute('data-anim') == index) {
+          contenu[j].classList.add('activeContenu');
+      } else {
+          contenu[j].classList.remove('activeContenu');
+      }
+    }
+  })
+})
