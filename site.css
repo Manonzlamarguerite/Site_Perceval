@@ -1,0 +1,58 @@
+body {
+  font-size: medium;
+  font-family: Verdana;
+  background-color: silver;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  border-width: 25px;
+  border-style: double;
+  border-color: black;
+  padding: 0.3em
+}
+
+nav
+{
+  border-width: thin;
+  border-style: solid;
+  border-color: black;
+  margin: 0.3em;
+  padding: 0.3em;
+
+}
+
+div.corps {
+  border-width: 10px;
+  border-style: double;
+  border-color: black;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+section {
+  text-align: justify;
+  border-width: thin;
+  border-style: solid;
+  border-color: silver;
+  margin: 0.3em;
+  padding: 0.3em
+}
+
+div.image {
+  align-content: center;
+}
+
+footer {
+  border-width: 10px;
+  border-style: double;
+  border-color: black;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 0.3em;
+}

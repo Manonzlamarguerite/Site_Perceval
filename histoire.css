@@ -1,0 +1,14 @@
+body {
+  font-size: medium;
+  font-family: Verdana;
+  background-color: silver;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  border-width: 25px;
+  border-style: double;
+  border-color: black;
+  padding: 0.3em
+}
