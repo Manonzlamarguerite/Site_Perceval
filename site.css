@@ -35,16 +35,10 @@ div.corps {
 
 section {
   text-align: justify;
-  border-width: thin;
-  border-style: solid;
-  border-color: silver;
   margin: 0.3em;
-  padding: 0.3em
+  padding: 0.5em;
 }
 
-div.image {
-  align-content: center;
-}
 
 footer {
   border-width: 10px;
@@ -54,5 +48,51 @@ footer {
   display: flex;
   flex-direction: row;
   align-content: center;
-  padding: 0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 1em;
+  justify-content: space-between;
+}
+
+span{
+  display: block;
+  width: 300px;
+  height: 80px;
+  margin-left: 5px;
+  line-height: 80px;
+  background: grey;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.onglet{
+  height: 650px;
+  width: 0px;
+  position:absolute;
+  z-index:1;
+  background-color: grey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin-top: 80px
+}
+
+.onglet-contenu {
+  position:relative;
+  top:5%;
+  text-align: center;
+
+}
+
+.onglet a{
+  padding:8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-size: 1.5em;
+}
+
+.onglet a:hover, .onglet a:focus{
+  color:grey
 }
