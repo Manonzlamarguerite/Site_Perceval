@@ -1,0 +1,41 @@
+body {
+  font-size: medium;
+  font-family: Verdana;
+  background-color: silver;
+}
+
+
+h1{
+  border: 10px double black;
+  padding: 5px;
+  text-align: center;
+}
+
+*, ::before, ::after { /*initialiser le padding etc de la page */
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+}
+
+
+.bouton_ouvrir {
+  background-color: grey;
+  font-size: 1.5em;
+  border: none;
+}
+
+
+div.organisation {
+  background-color: grey;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.organisation:hover {
+  background-color: #ddd;
+}
+div.para {
+  display: none;
+}

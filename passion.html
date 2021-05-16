@@ -2,9 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="passion.css">
+    <title>Mes passions pour la nourriturze</title>
   </head>
   <body>
+    <h1>Ma passion pour la nourriturze !</h1>
 
+    <div class="organisation">
+       <input type="button" value="Les potits fruits" class="bouton_ouvrir" onclick="ouvrir('fruit')"/>
+    </div>
+    <div class="para fermer" id="fruit">
+        banane pomme
+    </div>
+    <br/>
+
+    <div class="organisation">
+      <input type="button" value="Les potites graines" class="bouton_ouvrir" onclick="ouvrir('graine')"/>
+    </div>
+      <div class="para fermer" id="graine">
+        amande, tournesol
+      </div>
+    <br/>
+
+    <div class="organisation">
+      <input type="button" value="Les potites friandises" class="bouton_ouvrir" onclick="ouvrir('friandise')"/>
+    </div>
+    <div class="para fermer" id="friandise">
+        chantilly, thé
+    </div>
+
+    <script src="passion.js"></script>
   </body>
 </html>
